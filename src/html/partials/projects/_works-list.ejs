@@ -1,0 +1,32 @@
+<section class="works-list">
+
+  <ul class="works-list__items">
+
+    <% works.forEach(item => { %>
+
+      <li class="works-list__item">
+        <article class="article">
+          <a href="<%= item.url %>" class="works-list__link">
+            <p class="works-list__title">
+              <%= item.title %>
+            </p>
+            <img src="<%= item.image %>" alt="" class="works-list__image">
+            <% if (item.category) { %>
+              <ul class="works-list__categories">
+                <% item.category.forEach(cate => { %>
+                  <li class="works-list__category">
+                    <%= cate %>
+                  </li>
+                <% }) %>
+              </ul>
+            <% } %>
+          </a>
+        </article>
+
+      </li>
+
+    <% }) %>
+
+  </ul>
+
+</section>

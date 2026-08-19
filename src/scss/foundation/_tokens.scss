@@ -1,0 +1,23 @@
+:root {
+
+  /* Color */
+  --color-blue: #3ea8ff;
+  --color-text: #000000;
+  --color-current: #005fcc;
+  --color-link-nav: #000000;
+  --color-link-hover: #005fcc;
+  --color-background: #eee;
+  --color-button-primary-bg: var(--color-blue);
+  --color-button-primary-txt: #fff;
+
+  /* Rounded */
+  --rounded-primary: 4px;
+  --rounded-secondary: 6px;
+  
+  /* Focus */
+  --color-focus: #005fcc;
+
+  /* Font */
+  --font-base: system-ui, sans-serif;
+
+}

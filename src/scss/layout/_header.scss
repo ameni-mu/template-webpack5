@@ -1,0 +1,39 @@
+
+.header {
+  width: 100%;
+  background-color: var(--color-background);
+  height: 100px;
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: grid;
+    grid-template: "logo nav" 100%
+                  /auto 1fr;
+  }
+  .logo {
+    width: 160px;
+    height: 80px;
+    background-color: #ccc;
+    grid-area: logo;
+  }
+  .g-nav {
+    font-size: 16px;
+    grid-area: nav;
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 0;
+      justify-content: flex-end;
+    }
+    a {
+      color: var(--color-link-nav);
+      display: inline-block;
+      padding: 10px 16px;
+      &:hover {
+        color: var(--color-link-hover);
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+<%- include('../partials/common/_meta', {
+  title: '[仮]サイト名',
+  description: '[仮]タページの説明が入ります[仮]',
+  cssname: 'contact',
+  canonical: 'https://dummy.com/',
+  siteName: '[ダミー]サイト名',
+  ogType: 'article',
+  ogImage: 'https://dummy.com/assets/img/ogp/default.jpg',
+  ogImageAlt: '[ダミー]サイト名',
+  twitterSite: '@dummy',
+}) %>
+
+<body class="contact">
+
+<%- include('../partials/common/_header', {
+  currentPage: 'home'
+}) %>
+
+<main class="main">
+
+  <p>
+    homeコンテンツが入るよ
+  </p>
+
+  <section class="works">
+    <%- include('../partials/projects/_works-list.ejs', {
+      works: [
+        {
+          url: '/works/1.html',
+          title: 'タイトル1',
+          image: '<img src="/images/works/1.jpg" alt="実績1の参考画像">',
+          category: [
+            'design',
+            'coding'
+          ]
+        },
+        {
+          url: '/works/2.html',
+          title: 'タイトル2',
+          image: '<img src="/images/works/2.jpg" alt="実績2の参考画像">',
+          category: [
+            'illust',
+            'design',
+            'coding',
+            'WordPress'
+          ]
+        },
+        {
+          url: '/works/3.html',
+          title: 'タイトル3',
+          image: '<img src="/images/works/3.jpg" alt="実績3の参考画像">',
+          category: [
+            'illust',
+            'design',
+            'coding',
+            'WordPress'
+          ]
+        },
+        {
+          url: '/works/4.html',
+          title: 'タイトル4',
+          image: '<img src="/images/works/4.jpg" alt="実績4の参考画像">',
+          category: [
+            'coding',
+          ]
+        },
+        {
+          url: '/works/5.html',
+          title: 'タイトル5',
+          image: '<img src="/images/works/5.jpg" alt="実績5の参考画像">',
+          category: [
+            'coding',
+          ]
+        },
+        {
+          url: '/works/6.html',
+          title: 'タイトル6',
+          image: '<img src="/images/works/6.jpg" alt="実績6の参考画像">',
+          category: [
+            'coding',
+          ]
+        }
+      ]
+    }) %>
+  </section>
+
+</main>
+
+<%- include('../partials/common/_footer') %>

@@ -1,0 +1,12 @@
+
+/////////////////////////////////////////
+// Home
+/////////////////////////////////////////
+export default class Home {
+  constructor () {
+
+    console.log('home');
+  }
+
+}
+const home = new Home();

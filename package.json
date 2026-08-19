@@ -1,0 +1,40 @@
+{
+  "name": "sugaya_webpack5template",
+  "private": true,
+  "scripts": {
+    "imgmin": "node imagemin.js ",
+    "start": "NODE_ENV=development npx webpack serve --config webpack.config.js --mode development",
+    "build:dev": "NODE_ENV=development npx webpack --config webpack.config.js --mode development --watch",
+    "build:prod": "NODE_ENV=production npx webpack --config webpack.config.js --mode production --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "babel-loader": "10.0.0",
+    "core-js": "3.46.0",
+    "css-loader": "7.1.2",
+    "css-minimizer-webpack-plugin": "^8.0.0",
+    "dotenv": "17.2.3",
+    "ejs": "3.1.10",
+    "fs-extra": "11.3.2",
+    "html-loader": "5.1.0",
+    "html-webpack-plugin": "^5.6.8",
+    "mini-css-extract-plugin": "2.9.4",
+    "sass": "1.94.0",
+    "sass-loader": "16.0.6",
+    "sharp": "^0.35.3",
+    "style-loader": "4.0.0",
+    "template-ejs-loader": "^0.9.4",
+    "terser-webpack-plugin": "^5.6.1",
+    "webpack": "^5.109.2",
+    "webpack-cli": "6.0.1",
+    "webpack-dev-server": "^5.2.6",
+    "webpack-fix-style-only-entries": "0.6.1",
+    "webpack-remove-empty-scripts": "1.1.1"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

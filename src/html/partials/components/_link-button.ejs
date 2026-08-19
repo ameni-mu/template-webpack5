@@ -1,0 +1,19 @@
+<%
+const {
+  href = "#",
+  text = "ボタン",
+  modifier = "",
+  target = "",
+} = locals;
+%>
+
+<a
+  href="<%= href %>"
+  class="button <%= modifier ? `button--${modifier}` : '' %>"
+  <% if(target){ %>target="<%= target %>"<% } %>
+  rel="noopener"
+>
+  <span class="button__text">
+    <%= text %>
+  </span>
+</a>

@@ -1,0 +1,17 @@
+.footer {
+  background-color: var(--color-background);
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  .nav {
+    display: flex;
+    a {
+      color: var(--color-link-nav);
+      &:hover {
+        color: var(--color-link-hover);
+      }
+    }
+  }
+}

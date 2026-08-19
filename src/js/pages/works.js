@@ -1,0 +1,12 @@
+
+/////////////////////////////////////////
+// Works
+/////////////////////////////////////////
+export default class Works {
+  constructor () {
+
+    console.log('works');
+  }
+
+}
+const works = new Works();
